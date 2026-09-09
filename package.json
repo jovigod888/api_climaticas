@@ -1,0 +1,28 @@
+{
+  "name": "api-climaticas",
+  "version": "1.0.0",
+  "description": "API em Node.js/Express que retorna o clima atual de todos os países do mundo, usando a Open-Meteo (sem necessidade de chave de API).",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "clima",
+    "weather",
+    "api",
+    "open-meteo",
+    "paises"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
