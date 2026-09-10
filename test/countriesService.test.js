@@ -38,3 +38,6 @@ test('getRegions retorna lista de regiões sem duplicatas', () => {
   assert.equal(new Set(regions).size, regions.length);
   assert.ok(regions.includes('Americas'));
 });
+
+
+
