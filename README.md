@@ -10,6 +10,11 @@ API em Node.js/Express que retorna o **clima atual de todos os países do mundo*
 > **Por que um arquivo estático para os países, e não uma API de países em tempo real?**
 > A opção mais comum para isso é a REST Countries, mas a versão gratuita e sem chave (v3.1) foi **descontinuada** pelo provedor — a v5 atual exige cadastro e chave de API, com cota gratuita de apenas 500 requisições/mês. Como dados de país/capital/coordenadas praticamente não mudam, um arquivo estático é mais simples, mais rápido e não depende de um serviço externo (nem de chave) só para isso. Se no futuro você preferir buscar esses dados de outro lugar, é só trocar o `src/services/countriesService.js`.
 
+## Pré-requisitos
+
+- [Node.js](https://nodejs.org) versão 18 ou superior (o `npm` já vem incluso na instalação).
+- No Windows, depois de instalar, **feche e abra o PowerShell/terminal de novo** antes de rodar os comandos abaixo — senão ele não reconhece o `npm` ainda. Confira com `node --version` e `npm --version`.
+
 ## Instalação
 
 ```bash
