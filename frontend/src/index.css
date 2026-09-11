@@ -1,0 +1,78 @@
+:root {
+  color-scheme: dark;
+
+  /* --- tokens: cor --- */
+  --bg: #0d1321;
+  --surface: #161d2e;
+  --surface-raised: #1c2540;
+  --ink: #edeff5;
+  --ink-muted: #8891a8;
+  --line: #2a3348;
+  --line-strong: #3a4566;
+  --temp-cold: #5aa9e6;
+  --temp-hot: #e8703a;
+  --focus: #7fc8c4;
+
+  /* --- tokens: tipografia --- */
+  --font-ui: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-readout: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+
+  /* --- tokens: espaço/raio --- */
+  --radius: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input {
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Acessibilidade: foco sempre visível, nunca removido */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
