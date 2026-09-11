@@ -1,0 +1,100 @@
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+
+.tile:hover,
+.tile:focus-within {
+  border-color: var(--line-strong);
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.flag {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.capital {
+  margin-top: 2px;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+.temp {
+  font-family: var(--font-readout);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--accent);
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.unit {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 2px;
+  opacity: 0.8;
+}
+
+.condition {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  margin: 2px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.stat dt {
+  font-size: 0.68rem;
+  color: var(--ink-muted);
+}
+
+.stat dd {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.noData {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  padding-top: 6px;
+}
+
