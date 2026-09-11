@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.meta {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+.refresh {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.refresh:hover:not(:disabled) {
+  border-color: var(--focus);
+  background: var(--surface-raised);
+}
+
+.refresh:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
