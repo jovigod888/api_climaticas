@@ -88,15 +88,3 @@ module.exports = {
   getWeatherForAll,
   getWeatherForOne,
 };
-
-
-module.exports = {
-  listCountries,
-  listRegions,
-  getCountry,
-  getWeatherForAll,
-  getWeatherForOne,
-};
-
-
-
