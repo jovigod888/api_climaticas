@@ -20,3 +20,6 @@ export function fetchAllWeather({ refresh = false } = {}) {
   const query = params.toString();
   return getJson(`${BASE}/weather${query ? `?${query}` : ''}`);
 }
+
+
+
